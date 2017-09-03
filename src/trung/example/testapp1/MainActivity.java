@@ -70,18 +70,7 @@ public class MainActivity extends Activity {
 						String tk, mk;
 						tk = edtDKUser.getText().toString();
 						mk = edtDKPass.getText().toString();
-						if (tk.trim().equals("") || mk.trim().equals("")) {
-							Toast.makeText(getApplicationContext(), "Không được để trống", Toast.LENGTH_SHORT).show();
-							return;
-						} else if (tk.trim().length() < 6 || tk.trim().length() > 12) {
-							Toast.makeText(getApplicationContext(), "Tài khoản phải từ 6 - 12 kí tự",
-									Toast.LENGTH_SHORT).show();
-							return;
-						} else if (mk.trim().length() < 6 || mk.trim().length() > 15) {
-							Toast.makeText(getApplicationContext(), "Mật khẩu phải từ 6 - 15 kí tự", Toast.LENGTH_SHORT)
-									.show();
-							return;
-						}
+						
 						try {
 							Logins login = new Logins();
 							login.setUser(tk);
