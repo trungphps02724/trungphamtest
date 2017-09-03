@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="trung.example.testapp1"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="trung.example.testapp1.ListStudentActivity"
+            android:label="Danh sách sinh viên" >
+        </activity>
+        <activity
+            android:name="trung.example.testapp1.NewStudentsActivity"
+            android:label="Thêm mới sinh viên"
+            android:parentActivityName="trung.example.testapp1.ListStudentActivity" >
+        </activity>
+        <activity
+            android:name="trung.example.testapp1.UpdateStudentsActivity"
+            android:label="Cập nhật sinh viên"
+            android:parentActivityName="trung.example.testapp1.ListStudentActivity" >
+        </activity>
+        <activity
+            android:name="trung.example.testapp1.DetailStudentsActivity"
+            android:label="Thông tin sinh viên"
+            android:parentActivityName="trung.example.testapp1.ListStudentActivity" >
+        </activity>
+    </application>
+
+</manifest>

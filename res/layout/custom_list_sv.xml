@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtTenSV"
+        android:layout_below="@+id/txtTenSV"
+        android:layout_marginTop="18dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="Giới tính:" />
+
+    <TextView
+        android:id="@+id/txtTenSV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="26dp"
+        android:text="Tên SV"
+        android:textColor="#00DD99"
+        android:textSize="20sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/txtXepLoai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtTenSV"
+        android:layout_marginRight="44dp"
+        android:text="Xếp loại"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtGioitinh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/txtTenSV"
+        android:text="TextView"
+        android:textSize="16sp" />
+
+</RelativeLayout>
